@@ -1,0 +1,162 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - notice
+  - sjcem_events_enquiry
+  - sjcem_exam_section_enquiry
+  - sjcem_department_enquiry
+  - sjcem_pg_courses
+  - sjcem_ug_courses
+  - sjcem_courses_enquiry
+  - sjcem_student_parent_login
+  - sjcem_civil_eng
+  - sjcem_mech_eng
+  - sjcem_comp_eng
+  - sjcem_extc_eng
+  - sjcem_it_eng
+  - sjcem_fe_admission
+  - sjcem_eng_contact_details
+  - sjcem_diploma_contact_details
+  - sjcem_mba_contact_details
+  - sjcem_principal
+  - sjcem_director
+  - sjcem_chairman
+  - sjcem_intake_enquiry
+  - sjcem_payment_detail_form
+  - sjcem_library_details
+  - sjcem_library_hours
+
+
+responses:
+  utter_student_parent_login:
+  - text: "For Students- Click on the following link and login with your credentials : http://report.aldel.org/student_page.php "
+  - text: "For Parents - Click on the following link : http://report.aldel.org/parent_page.php"
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_sjcem_events:
+  - text: "SJCEM organizes Megalio - technical fest and MegaHack -national level hackathon like events every year"
+
+  utter_sjcem_exam_section:
+  - text: "Link for SJCEM's Exam Section : https://www.vjti.ac.in/index.php/examsection"
+
+  utter_sjcem_department:
+  - text: "You can find the information related to departments in About section of :https://www.sjcem.edu.in/"
+
+  utter_more_help3: 
+  - text: "Want to know more? Type your doubts"
+
+  utter_more_help2: 
+  - text: "Have any doubts? "
+
+  utter_more_help: 
+  - text: "Is there anything else I can help you with ? "
+
+  utter_sjcem_courses:
+  - text: "Select which courses which you want to know about"
+    buttons:
+    - title: "PG Courses"
+      payload: /sjcem_pg_courses
+    - title: "UG Courses" 
+      payload: /sjcem_ug_courses
+  utter_pg_courses:
+  - text: "SJCEM provides MBA/MMS courses"
+  utter_pg_courses_link:
+  - text: "To know more follow the link: https://www.sjcem.edu.in/mba-mms/"
+
+  utter_ug_courses:
+  - text: " SJCEM has B.E(Bachelor's in Engineering) courses"
+    buttons:
+    - title: "Civil Engineering"
+      payload: /sjcem_civil_eng
+    - title: "Mechanical Engineering"
+      payload: /sjcem_mech_eng
+    - title: "Electronic and Telecommunication Engineering"
+      payload: /sjcem_extc_eng
+    - title: "Computer Engineering"
+      payload: "/sjcem_comp_eng"
+    - title: "Information Technology"
+      payload: "/sjcem_it_eng"
+  utter_civil:
+  - text: "To know more about Civil Department: https://www.sjcem.edu.in/eng-civil/"
+  utter_mech:
+  - text: "To know more about Mechanical Department: https://www.sjcem.edu.in/mech-eng-deg/"
+  utter_comp:
+  - text: "To know more about Computer Department: https://www.sjcem.edu.in/computer-engdeg/"
+  utter_extc:
+  - text: "To know more about Electronic and Telecommunication Department: https://www.sjcem.edu.in/elec-tele-eng-deg/"
+  utter_it:
+  - text: "To know more about IT Department: https://www.sjcem.edu.in/it-eng-deg/"
+  utter_fe_admission:
+  - text: "First year engineering admission form (institute level): https://www.sjcem.edu.in/first-year-engineering-degree-admission-form/"
+  utter_eng_contact_details:
+  - text: |-
+          Engineering Degree:
+          Email-id: office@sjcem.edu.in
+          Landline: +91-2525-297279/75
+          Mobile No: 7709177843
+  utter_diploma_contact_details:
+  - text: |-
+          Engineering Diploma:
+          Email-id: office_diploma@sjcem.edu.in
+          Landline: +91-2525-297279/75
+          Mobile No: 7219230153
+  utter_mba_contact_details:
+  - text: |-
+           MBA / MMS
+           Email-id: office_mms@sjcem.edu.in
+           Landline: +91-2525-297279/75
+           Mobile No: 9867027714
+  utter_chairman:
+  - text: "Mr. Albert D’Souza is the chairman of our college."
+  utter_chairman_msg:
+  - text: "See what our Chairman wants to say: https://www.sjcem.edu.in/chairmans-message/"
+  utter_principal:
+  - text: "Dr. G.V.Mulgund is the principal of our college"
+  utter_director:
+  - text: "Director of SJCEM is Dr. D. Henry"
+  utter_director_msg:
+  - text: "See what our Chairman wants to say: https://www.sjcem.edu.in/directors-message/"
+  utter_principal_msg:
+  - text: "See what our Chairman wants to say: https://www.sjcem.edu.in/principals-message/"
+  utter_intake_enquiry:
+  - text: |- 
+       BE Computer Engineering:	120	intakes
+       BE Civil Engineering:	60 intakes 
+       BE Information Technology:	60	intakes
+       BE Mechanical Engineering:	60	intakes
+       BE Artificial Intelligence and Machine learning:	30  intakes	
+       BE Electronics and Telecommunication Engineering:	30  intakes
+  utter_payment_form:
+  - text: "Submit your payment details here: https://docs.google.com/forms/d/e/1FAIpQLScRZyHoCLD3K4uNY0FnOmlM_-Bx9XYIA0NECUdm3W6JyHaZtQ/viewform"
+  utter_sjcem_lib_details:
+  - text: |-
+          The SJCEM’ Library and Information Centre (LIC) was established on 25 July 2008 
+          with the inception of the College with collection of 5052 books. 
+          The Library caters to all the students and faculty of college to pursue their study and research.
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

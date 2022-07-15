@@ -1,0 +1,123 @@
+version: "2.0"
+
+stories:
+- story: sjcem_event_path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: sjcem_events_enquiry
+  - action: utter_sjcem_events
+- story: sjcem_exam_section path
+  steps:
+  - intent: sjcem_exam_section_enquiry
+  - action: utter_sjcem_exam_section
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+- story: sjcem_department path
+  steps:
+  - intent: sjcem_department_enquiry
+  - action: utter_sjcem_department
+  - intent: utter_more_help3
+- story: sjcem_pgcourses path
+  steps:
+  - intent: sjcem_pg_courses
+  - action: utter_pg_courses
+  - action: utter_pg_courses_link
+
+- story: sjcem_ugcourses path
+  steps:
+  - intent: sjcem_ug_courses
+  - action: utter_ug_courses
+- story: sjcem_courses path
+  steps:
+  - intent: sjcem_courses_enquiry
+  - action: utter_sjcem_courses
+- story: sjcem_mis path
+  steps:
+  - intent: sjcem_student_parent_login
+  - action: utter_student_parent_login
+- story: civil_eng path
+  steps:
+  - intent: sjcem_civil_eng
+  - action: utter_civil
+- story: mech_eng path
+  steps:
+  - intent: sjcem_mech_eng
+  - action: utter_mech
+- story: comp_eng path
+  steps:
+  - intent: sjcem_comp_eng
+  - action: utter_comp
+- story: extc_eng path
+  steps:
+  - intent: sjcem_extc_eng
+  - action: utter_extc
+- story: it_eng path
+  steps:
+  - intent: sjcem_it_eng
+  - action: utter_it
+- story: fe_admission path
+  steps:
+  - intent: sjcem_fe_admission
+  - action: utter_fe_admission
+- story: eng_contact_details path
+  steps:
+  - intent: sjcem_eng_contact_details
+  - action: utter_eng_contact_details
+- story: diploma_contact_details path
+  steps:
+  - intent: sjcem_diploma_contact_details
+  - action: utter_diploma_contact_details
+- story: mba_contact_details path
+  steps:
+  - intent: sjcem_mba_contact_details
+  - action: utter_mba_contact_details
+- story: principal path
+  steps:
+  - intent: sjcem_principal
+  - action: utter_principal
+  - action: utter_principal_msg
+- story: chairman path
+  steps:
+  - intent: sjcem_chairman
+  - action: utter_chairman
+  - action: utter_chairman_msg
+- story: director path
+  steps:
+  - intent: sjcem_director
+  - action: utter_director
+  - action: utter_director_msg
+- story: intake_enquiry
+  steps:
+  - intent: sjcem_intake_enquiry
+  - action: utter_intake_enquiry
+- story: payment_submission
+  steps:
+  - intent: sjcem_payment_detail_form
+  - action: utter_payment_form
+
+

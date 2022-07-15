@@ -1,0 +1,245 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: sjcem_events_enquiry
+  examples: |
+    - What are the events in SJCEM?
+    - Which events are organised in SJCEM every year?
+    - SJCEM events
+    - annual events
+    - Events in SJCEM
+    - College events
+    - what are the college events?
+    - Annual events in SJCEM
+- intent: sjcem_exam_section_enquiry
+  examples: |
+    - Want to know details of exam section ?
+    - Can you tell about announcements of exam section?
+    - Exam section
+    - I want information about exam
+    - I want to go to sjcem exam section
+- intent: sjcem_department_enquiry
+  examples: |
+    - I want information regarding departments in SJCEM
+    - sjcem department innformation
+    - Departments of sjcem ?
+    - Which departments do SJCEM have?
+- intent: sjcem_pg_courses
+  examples: |
+    - post graduate courses avaialable in sjcem
+    - pg courses avaialable in sjcem
+    - post graduation 
+
+- intent: sjcem_ug_courses
+  examples: |
+    - engineering courses
+    - undergraduate courses
+    - which engineering courses are available in sjcem
+    - what are the under graduate courses offered in sjcem
+    - under graduate courses avaialable in sjcem
+    
+- intent: sjcem_courses_enquiry
+  examples: |
+    - courses avaialable in sjcem
+    - courses offered in sjcem
+    - information regarding courses offered in sjcem
+- intent: sjcem_civil_eng
+  examples: |
+    - civil engineering course
+    - want to know about engineering course
+    - can you tell me about civil engineering offered by sjcem
+- intent: sjcem_mech_eng
+  examples: |
+    - mechanical engineering course
+    - want to know about mech engineering course
+    - can you tell me about mechanical engineering offered by sjcem
+- intent: sjcem_extc_eng
+  examples: |
+    - extc engineering course
+    - want to know about electronic telecommunication engineering course
+    - can you tell me about extc engineering offered by sjcem
+- intent: sjcem_comp_eng
+  examples: |
+    - comps department
+    - computer engineering course
+    - want to know about computer engineering course
+    - can you tell me about computer engineering offered by sjcem
+- intent: sjcem_it_eng
+  examples: |
+    - information technology engineering course
+    - want to know about engineering course
+    - can you tell me about IT engineering offered by sjcem
+- intent: sjcem_student_parent_login
+  examples: |
+    - student login to mis
+    - parent login
+    - want to know my attendance 
+    - how to know my attendance status
+    - where to see my attendance and report
+    - report of my child
+    - attendance and report of my child
+    - where parents can login
+    - link to mis
+    - what is the link to the miss
+    - mis link
+    - MIS link
+- intent: sjcem_fe_addmission
+  examples: |
+    - admission form for first year
+    - how to get admission in first year
+    - First year engineering admission process
+    - admission for first year
+- intent: sjcem_eng_contact_details
+  examples: |
+    - how to contact office
+    - contact details of college office
+    - how can i contact college office
+    - email id of office
+    - office contact details
+- intent: sjcem_diploma_contact_details
+  examples: |
+    - how to contact diploma office
+    - contact details of diploma college office
+    - how can i contact diploma office
+    - diploma email id of office
+    - diploma office contact details
+- intent: sjcem_mba_contact_details
+  examples: |
+    - how to contact mba mms office
+    - contact details of mba college office
+    - how can i contact mms mbacollege office
+    - email id of MBA mba office
+    - MBA MMS office contact details
+- intent: sjcem_principal
+  examples: |
+    - who is principal of the college
+    - principal name
+    - what is the name of principal
+    - who is the principal
+- intent: sjcem_director
+  examples: |
+    - who is the director
+    - Director of the college
+    - what is the name of the director
+- intent: sjcem_chairman
+  examples: |
+    - who is the chair person of the college
+    - whaat is the name of the chairman
+    - chairman name
+    - what is the name of the chair person
+- intent: sjcem_intake_enquiry
+  examples: |
+    - What is intake for first year Engineering?
+    - How many students can get admission for first year in sjcem?
+    - intake capacity for engineering course
+- intent: sjcem_payment_detail_form
+  examples: | 
+    - where to fill payment details
+    - want to submit payment details
+    - google form to submit my payment details
+    - payment detail submission form
+- intent: sjcem_library_details
+  examples: |
+    - St john's library details
+    - does st john college have library?
+    - Library in sjcem 
+    - Does st john college have library?
+- intent: sjcem_library_hours
+  examples: |
+    - what are the library hours?
+    - when I can return the book in library
+    - library timmings
+
+
+
+
+

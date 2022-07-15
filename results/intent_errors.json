@@ -1,0 +1,18 @@
+[
+  {
+    "text": "good afternoon",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.5783764719963074
+    }
+  },
+  {
+    "text": "want to know about engineering course",
+    "intent": "sjcem_civil_eng",
+    "intent_prediction": {
+      "name": "sjcem_it_eng",
+      "confidence": 0.48742085695266724
+    }
+  }
+]
